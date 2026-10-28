@@ -1,133 +1,663 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy for Soul Shelf</title>
-<style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65;max-width:760px;margin:0 auto;padding:24px 20px 64px;color:#1f2933;background:#fff}
-  h1{font-size:1.8rem;margin-bottom:.2rem}
-  h2{font-size:1.25rem;margin-top:2rem;border-bottom:1px solid #e1e5ea;padding-bottom:.3rem}
-  h3{font-size:1.05rem;margin-top:1.4rem}
-  a{color:#1a5fb4}
-  @media (prefers-color-scheme: dark){
-    body{background:#15181d;color:#e6e9ee}
-    h2{border-color:#343b45}
-    a{color:#7ab3ff}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Read the Soul Shelf privacy policy to understand how your household inventory data is collected, used, stored and protected.">
+
+  <meta name="theme-color" content="#166534">
+
+  <title>Privacy Policy | Soul Shelf</title>
+
+  <style>
+    :root {
+      --primary: #166534;
+      --primary-light: #dcfce7;
+      --text: #1f2937;
+      --muted: #64748b;
+      --background: #f5f8f5;
+      --surface: #ffffff;
+      --border: #e2e8e2;
+      --link: #15803d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--background);
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #14532d, #15803d);
+      color: #fff;
+      padding: 48px 20px 58px;
+    }
+
+    .hero-inner {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      font-weight: 750;
+      letter-spacing: -0.3px;
+      margin-bottom: 28px;
+    }
+
+    .brand-icon {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      background: rgba(255, 255, 255, 0.16);
+      font-size: 23px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -1.2px;
+      margin: 0 0 14px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0;
+      color: #e0f2e5;
+      font-size: 1.05rem;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 7px 13px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 30px;
+      background: rgba(255,255,255,.10);
+      color: #fff;
+      font-size: .88rem;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: -24px auto 0;
+      padding: 0 20px 48px;
+      position: relative;
+    }
+
+    .intro,
+    .toc,
+    .policy-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 18px rgba(15, 60, 30, .035);
+    }
+
+    .intro {
+      border-top: 4px solid #22c55e;
+    }
+
+    .intro p:first-child {
+      margin-top: 0;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    .toc h2,
+    .policy-section h2 {
+      color: var(--primary);
+      font-size: 1.3rem;
+      line-height: 1.4;
+      margin: 0 0 18px;
+    }
+
+    .toc ol {
+      columns: 2;
+      column-gap: 36px;
+      padding-left: 22px;
+      margin: 0;
+    }
+
+    .toc li {
+      padding: 4px 0;
+      break-inside: avoid;
+    }
+
+    .policy-section {
+      scroll-margin-top: 20px;
+    }
+
+    .policy-section h2 {
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .policy-section h3 {
+      color: #334155;
+      font-size: 1.04rem;
+      margin: 24px 0 8px;
+    }
+
+    .policy-section p {
+      margin: 12px 0;
+    }
+
+    .policy-section ul {
+      padding-left: 24px;
+    }
+
+    .policy-section li {
+      padding-left: 4px;
+      margin-bottom: 9px;
+    }
+
+    .contact-card {
+      background: var(--primary-light);
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 16px;
+    }
+
+    .contact-card p {
+      margin: 5px 0;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 10px 20px 32px;
+      font-size: .9rem;
+    }
+
+    .footer strong {
+      color: var(--primary);
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 34px 18px 46px;
+      }
+
+      .container {
+        padding: 0 12px 32px;
+      }
+
+      .intro,
+      .toc,
+      .policy-section {
+        padding: 20px 17px;
+        border-radius: 12px;
+      }
+
+      .toc ol {
+        columns: 1;
+      }
+
+      body {
+        font-size: 15px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e5e7eb;
+        --muted: #a1a1aa;
+        --background: #111827;
+        --surface: #1f2937;
+        --border: #374151;
+        --link: #86efac;
+        --primary-light: #163b2a;
+      }
+
+      .toc h2,
+      .policy-section h2 {
+        color: #86efac;
+      }
+
+      .policy-section h3 {
+        color: #d1d5db;
+      }
+
+      .contact-card {
+        border-color: #286342;
+      }
+
+      .footer strong {
+        color: #86efac;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<h1>Privacy Policy for Soul Shelf</h1>
-<p><strong>Effective Date:</strong> October 28, 2026<br><strong>Last Updated:</strong> October 28, 2026</p>
 
-<p>Soul Shelf ("we", "our", "us") is a household inventory app that helps you track groceries, expiry dates, shopping lists and shared shelves with your family. This Privacy Policy explains what information the Soul Shelf mobile app (package name: <code>com.soulshelf.app</code>, the "App") collects, how it is used, and the choices you have.</p>
-<p>By using the App, you agree to the practices described in this policy.</p>
-<p><strong>Developer:</strong> Aishwarya A<br><strong>Contact:</strong> <a href="mailto:aishwaryasri234@gmail.com">aishwaryasri234@gmail.com</a></p>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <span class="brand-icon" aria-hidden="true">🌿</span>
+      <span>Soul Shelf</span>
+    </div>
 
-<h2>1. Information We Collect</h2>
+    <h1>Privacy Policy</h1>
 
-<h3>A. Account information</h3>
-<ul>
-<li><strong>Email address and password:</strong> If you create an account, Firebase Authentication stores your email address and a securely hashed password so we can identify you and sync your data across devices and family members.</li>
-<li><strong>Anonymous ID:</strong> The App may create an anonymous Firebase user ID so the App can work before you sign in.</li>
-<li><strong>Profile details:</strong> Your display name, your role on a shelf (for example Owner or Member), and an optional avatar emoji, so shelf members can see who is who.</li>
-</ul>
+    <p>
+      Your home, your shelves, your privacy.
+      Learn how Soul Shelf handles your information
+      when you manage groceries, expiry dates and
+      shared household inventory.
+    </p>
 
-<h3>B. Content you create</h3>
-<ul>
-<li>Pantry items, quantities, units, categories, expiry dates, shopping lists, activity logs, and the shelf codes and join requests that connect family members to a shared shelf.</li>
-</ul>
+    <div class="updated">
+      Effective: October 28, 2026
+      &nbsp; · &nbsp;
+      Last updated: October 28, 2026
+    </div>
+  </div>
+</header>
 
-<h3>C. Photos and camera</h3>
-<ul>
-<li><strong>Receipt / bill scanning:</strong> When you scan a grocery bill, the photo you take is sent to our secure Firebase Cloud Function, which sends it to Google's Gemini API to read the items. The photo is used only to extract the items. We may store the extracted item list (not a copy of your photo) so the same receipt does not need to be processed twice, and we keep a daily scan count per account to prevent abuse.</li>
-<li><strong>Barcode scanning:</strong> The camera is used to read product barcodes so the App can look up and fill in item details.</li>
-</ul>
+<main class="container">
 
-<h3>D. Voice input</h3>
-<ul>
-<li>If you tap the microphone, the App uses your device's built-in Google speech recognition service to turn your speech (English or Tamil) into text. The App itself does not record or store your audio.</li>
-</ul>
+  <section class="intro">
+    <p>
+      Soul Shelf ("we", "our", "us") is a household inventory
+      app that helps you track groceries, expiry dates,
+      shopping lists and shared shelves with your family.
+    </p>
 
-<h3>E. AI assistant requests</h3>
-<ul>
-<li>When you use the AI assistant, recipe suggestions or similar features, your question and relevant inventory details (such as item names and quantities) are sent to Google's Gemini API to generate a response. We do not send your email address or name to Gemini.</li>
-</ul>
+    <p>
+      This policy explains what information the Soul Shelf
+      mobile app (package name:
+      <code>com.soulshelf.app</code>, the "App") collects,
+      how it is used, and the choices available to you.
+    </p>
 
-<h3>F. Advertising and device information</h3>
-<ul>
-<li>The App shows ads using Google AdMob. AdMob may collect your device's advertising ID, IP address, and similar device and usage information to show ads and measure their performance. You can reset your advertising ID or opt out of personalized ads in your Android settings (Settings &gt; Google &gt; Ads).</li>
-</ul>
+    <p>
+      By using the App, you acknowledge this Privacy Policy.
+    </p>
 
-<h3>G. Information we do not collect</h3>
-<ul>
-<li>We do not collect your precise or approximate location.</li>
-<li>We do not collect your contacts, SMS messages or call history.</li>
-</ul>
+    <p>
+      <strong>Developer:</strong> Aishwarya A<br>
+      <strong>Contact:</strong>
+      <a href="mailto:aishwaryasri234@gmail.com">
+        aishwaryasri234@gmail.com
+      </a>
+    </p>
+  </section>
 
-<h2>2. How We Use Your Information</h2>
-<ul>
-<li>To provide the App and keep your pantry, shopping list and shared shelves synced in real time between members of the same shelf.</li>
-<li>To run AI features such as receipt scanning, barcode lookup, recipe suggestions and the assistant.</li>
-<li>To send local notifications about low stock and items nearing expiry.</li>
-<li>To secure accounts, prevent abuse and limit usage (for example, daily scan limits).</li>
-<li>To fix bugs and improve the App.</li>
-<li>To show ads through AdMob.</li>
-</ul>
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#information">Information We Collect</a></li>
+      <li><a href="#usage">How We Use Your Information</a></li>
+      <li><a href="#third-parties">Third-Party Services</a></li>
+      <li><a href="#sharing">Sharing Within Your Shelf</a></li>
+      <li><a href="#permissions">Device Permissions</a></li>
+      <li><a href="#security">Data Storage and Security</a></li>
+      <li><a href="#deletion">Account and Data Deletion</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
 
-<h2>3. Third-Party Services</h2>
-<p>The App relies on these services, which process data under their own privacy policies:</p>
-<ul>
-<li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, Cloud Functions, Remote Config): account login, data storage and sync. <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-<li><strong>Google Gemini API:</strong> reads receipts and generates AI responses. <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-<li><strong>Google speech recognition (on-device service):</strong> voice input. <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-<li><strong>Google AdMob:</strong> advertising. <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
-</ul>
-<p>We do not sell your personal information. We do not share it with anyone else for their own marketing purposes.</p>
+  <section class="policy-section" id="information">
+    <h2>1. Information We Collect</h2>
 
-<h2>4. Sharing Within Your Shelf</h2>
-<p>Shelves are collaborative. Anyone who joins your shelf can see the items, shopping list, activity log and the display names of members on that shelf. Joining a shelf requires the shelf code and approval from the shelf owner. Only share your shelf code with people you trust.</p>
+    <h3>A. Account information</h3>
+    <ul>
+      <li><strong>Email address and password:</strong>
+        If you create an account, Firebase Authentication
+        processes your email and password credentials to
+        authenticate you and support account access.</li>
+      <li><strong>Anonymous ID:</strong>
+        The App may create an anonymous Firebase user ID
+        so you can use supported features before signing in.</li>
+      <li><strong>Profile details:</strong>
+        Your display name, shelf role (such as Owner or
+        Member), and optional avatar emoji.</li>
+    </ul>
 
-<h2>5. Device Permissions</h2>
-<ul>
-<li><strong>Camera:</strong> scan receipts and barcodes.</li>
-<li><strong>Notifications:</strong> low-stock and expiry reminders.</li>
-<li><strong>Internet:</strong> sync your data and use AI features.</li>
-</ul>
-<p>You can change permissions at any time in your device settings. The App still works without the camera permission, but scanning will not be available.</p>
+    <h3>B. Content you create</h3>
+    <ul>
+      <li>Pantry items, quantities, units, categories,
+        expiry dates, shopping lists, activity logs,
+        shelf codes and join requests.</li>
+    </ul>
 
-<h2>6. Data Storage, Security and Retention</h2>
-<ul>
-<li>Your data is stored in Google Firebase (Cloud Firestore), on Google Cloud infrastructure. Data may be processed on servers outside your country.</li>
-<li>Data is encrypted in transit using HTTPS.</li>
-<li>Access controls (Firestore security rules) are designed so that only members of a shelf can read or write that shelf's data.</li>
-<li>We keep your data for as long as your account is active. When you delete your account, your data is removed as described below.</li>
-<li>No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</li>
-</ul>
+    <h3>C. Photos and camera</h3>
+    <ul>
+      <li><strong>Receipt or bill scanning:</strong>
+        When you scan a grocery bill, the image is sent
+        to our Firebase Cloud Function, which sends it
+        to Google's Gemini API to extract item information.
+        We may store the extracted item list to avoid
+        processing the same receipt again and maintain
+        a daily scan count to prevent abuse.</li>
+      <li><strong>Barcode scanning:</strong>
+        The camera reads product barcodes so the App
+        can look up and fill in item details.</li>
+    </ul>
 
-<h2>7. Account and Data Deletion</h2>
-<p>You can delete your account and data at any time.</p>
-<p><strong>In the App:</strong> open <strong>Profile / Settings</strong> and tap <strong>Delete Account</strong>.</p>
-<p><strong>By email:</strong> if you cannot access the App, email <a href="mailto:aishwaryasri234@gmail.com">aishwaryasri234@gmail.com</a> with the subject "Account Deletion Request" from the email address registered on your account. We will process the request within 30 days.</p>
-<p><strong>What is deleted:</strong></p>
-<ul>
-<li>Your email address and Firebase authentication profile.</li>
-<li>Your user profile and your pending join requests.</li>
-<li>Shelves you own, including their items, shopping lists, activity logs and invite codes.</li>
-</ul>
-<p>Information that is backed up or cached by our service providers may remain for a short period before it is permanently removed.</p>
+    <h3>D. Voice input</h3>
+    <ul>
+      <li>When you tap the microphone, the App uses
+        your device's Google speech recognition service
+        to convert supported speech, including English
+        or Tamil, into text. The App does not itself
+        record or store your audio. The speech service
+        may process data according to its own settings
+        and privacy policy.</li>
+    </ul>
 
-<h2>8. Your Rights</h2>
-<p>Depending on where you live, you may have the right to access, correct, export or delete your personal data, or to object to certain processing. To make a request, contact us at <a href="mailto:aishwaryasri234@gmail.com">aishwaryasri234@gmail.com</a>. You can also delete your data yourself using the steps in Section 7.</p>
+    <h3>E. AI assistant requests</h3>
+    <ul>
+      <li>When you use AI features, such as recipe
+        suggestions or the assistant, your question and
+        relevant inventory details (such as item names
+        and quantities) are sent to Google's Gemini API
+        to generate a response. We do not intentionally
+        send your email address or name as part of
+        these AI requests.</li>
+    </ul>
 
-<h2>9. Children's Privacy</h2>
-<p>Soul Shelf is not directed at children under 13 (or the minimum age required in your country). We do not knowingly collect personal information from children. If you believe a child has given us personal information, contact us and we will delete it.</p>
+    <h3>F. Advertising and device information</h3>
+    <ul>
+      <li>The App displays ads using Google AdMob.
+        AdMob may process advertising identifiers,
+        IP addresses and other device or usage information
+        to deliver ads and measure performance. You may
+        be able to reset your advertising ID or change
+        personalized-ad settings through Android settings.</li>
+    </ul>
 
-<h2>10. Changes to This Policy</h2>
-<p>We may update this policy from time to time. When we do, we will change the "Last Updated" date above. Continued use of the App after a change means you accept the updated policy.</p>
+    <h3>G. Information we do not collect</h3>
+    <ul>
+      <li>We do not collect your precise or approximate
+        location through the App.</li>
+      <li>We do not collect your contacts, SMS messages
+        or call history.</li>
+    </ul>
+  </section>
 
-<h2>11. Contact Us</h2>
-<p><strong>Developer:</strong> Aishwarya A<br><strong>Email:</strong> <a href="mailto:aishwaryasri234@gmail.com">aishwaryasri234@gmail.com</a></p>
+  <section class="policy-section" id="usage">
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To provide the App and synchronize pantry items,
+        shopping lists and shared shelves.</li>
+      <li>To provide AI features, receipt scanning,
+        barcode lookup and recipe suggestions.</li>
+      <li>To send local notifications about low stock
+        and items nearing expiry.</li>
+      <li>To secure accounts, prevent abuse and apply
+        usage limits.</li>
+      <li>To troubleshoot errors and improve the App.</li>
+      <li>To display advertisements through AdMob.</li>
+    </ul>
+  </section>
+
+  <section class="policy-section" id="third-parties">
+    <h2>3. Third-Party Services</h2>
+
+    <p>
+      Soul Shelf uses third-party services to provide
+      its features. These services may process information
+      under their own terms and privacy policies.
+    </p>
+
+    <ul>
+      <li><strong>Google Firebase:</strong>
+        Authentication, Cloud Firestore, Cloud Functions
+        and Remote Config.
+        <a href="https://firebase.google.com/support/privacy"
+           target="_blank" rel="noopener noreferrer">
+          Firebase Privacy Information
+        </a>
+      </li>
+      <li><strong>Google Gemini API:</strong>
+        Receipt extraction and AI-generated responses.
+        <a href="https://ai.google.dev/gemini-api/terms"
+           target="_blank" rel="noopener noreferrer">
+          Gemini API Terms
+        </a>
+      </li>
+      <li><strong>Google speech recognition:</strong>
+        Speech-to-text input.
+        <a href="https://policies.google.com/privacy"
+           target="_blank" rel="noopener noreferrer">
+          Google Privacy Policy
+        </a>
+      </li>
+      <li><strong>Google AdMob:</strong>
+        Advertising and ad measurement.
+        <a href="https://policies.google.com/technologies/ads"
+           target="_blank" rel="noopener noreferrer">
+          Google Advertising Policies
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      We do not sell your personal information or share
+      it with other companies for their own independent
+      marketing purposes. Third-party providers may
+      process information to deliver their services.
+    </p>
+  </section>
+
+  <section class="policy-section" id="sharing">
+    <h2>4. Sharing Within Your Shelf</h2>
+
+    <p>
+      Shelves are collaborative. People who join your
+      shelf may see its items, shopping list, activity
+      log and the display names of members on that shelf.
+    </p>
+
+    <p>
+      Joining a shelf requires its code and approval
+      from the shelf owner. Only share your shelf code
+      with people you trust.
+    </p>
+  </section>
+
+  <section class="policy-section" id="permissions">
+    <h2>5. Device Permissions</h2>
+
+    <ul>
+      <li><strong>Camera:</strong>
+        For scanning receipts and product barcodes.</li>
+      <li><strong>Notifications:</strong>
+        For low-stock and expiry reminders.</li>
+      <li><strong>Internet:</strong>
+        For synchronization and online AI features.</li>
+    </ul>
+
+    <p>
+      You can manage permissions through your device
+      settings. The App may continue to work without
+      camera permission, but camera-based scanning
+      will not be available.
+    </p>
+  </section>
+
+  <section class="policy-section" id="security">
+    <h2>6. Data Storage, Security and Retention</h2>
+
+    <ul>
+      <li>App data is stored using Google Firebase
+        and Google Cloud infrastructure.</li>
+      <li>Data may be processed on servers outside
+        your country, subject to applicable provider
+        practices and requirements.</li>
+      <li>Data is encrypted in transit using HTTPS.</li>
+      <li>Firestore security rules are intended to
+        restrict access to shelf data to authorized
+        members.</li>
+      <li>We retain personal data for as long as
+        necessary to provide the App and meet applicable
+        legal or operational requirements.</li>
+      <li>No method of transmission or storage is
+        completely secure, and absolute security
+        cannot be guaranteed.</li>
+    </ul>
+  </section>
+
+  <section class="policy-section" id="deletion">
+    <h2>7. Account and Data Deletion</h2>
+
+    <p>You can request deletion of your account and
+      associated data.</p>
+
+    <p>
+      <strong>In the App:</strong> Open Profile or Settings
+      and tap Delete Account, if this feature is available
+      in your installed version.
+    </p>
+
+    <p>
+      <strong>By email:</strong> If you cannot access
+      the App, email
+      <a href="mailto:aishwaryasri234@gmail.com">
+        aishwaryasri234@gmail.com
+      </a>
+      with the subject
+      <strong>Account Deletion Request</strong>,
+      preferably from your registered email address.
+      We aim to process requests within 30 days.
+    </p>
+
+    <p><strong>Deletion may include:</strong></p>
+    <ul>
+      <li>Your Firebase authentication account and
+        associated email address.</li>
+      <li>Your user profile and pending join requests.</li>
+      <li>Shelves you own, including their items,
+        shopping lists, activity logs and invite codes,
+        subject to the App's ownership and sharing rules.</li>
+    </ul>
+
+    <p>
+      Data held in backups or provider caches may
+      remain temporarily before being deleted under
+      applicable retention procedures. Information
+      that must be retained by law may be handled
+      as required by law.
+    </p>
+  </section>
+
+  <section class="policy-section" id="rights">
+    <h2>8. Your Rights</h2>
+
+    <p>
+      Depending on your location and applicable law,
+      you may have the right to access, correct, export
+      or delete your personal information, or object
+      to certain processing.
+    </p>
+
+    <p>
+      To make a request, contact
+      <a href="mailto:aishwaryasri234@gmail.com">
+        aishwaryasri234@gmail.com
+      </a>.
+      You may also use the account deletion options
+      described in Section 7.
+    </p>
+  </section>
+
+  <section class="policy-section" id="children">
+    <h2>9. Children's Privacy</h2>
+
+    <p>
+      Soul Shelf is not directed at children under 13,
+      or the minimum age required in your country.
+      We do not knowingly collect personal information
+      from children in violation of applicable law.
+    </p>
+
+    <p>
+      If you believe a child has provided personal
+      information, contact us so we can investigate
+      and take appropriate steps to delete it where
+      required.
+    </p>
+  </section>
+
+  <section class="policy-section" id="changes">
+    <h2>10. Changes to This Policy</h2>
+
+    <p>
+      We may update this policy from time to time.
+      When changes are made, we will update the
+      Last Updated date at the top of this page.
+      Please review this page periodically for changes.
+    </p>
+  </section>
+
+  <section class="policy-section" id="contact">
+    <h2>11. Contact Us</h2>
+
+    <p>
+      If you have questions about this Privacy Policy
+      or how Soul Shelf handles your information,
+      contact us using the details below.
+    </p>
+
+    <div class="contact-card">
+      <p><strong>Developer:</strong> Aishwarya A</p>
+      <p><strong>App:</strong> Soul Shelf</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:aishwaryasri234@gmail.com">
+          aishwaryasri234@gmail.com
+        </a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p><strong>Soul Shelf</strong></p>
+  <p>Privacy matters. Your home, organized.</p>
+  <p>© 2026 Soul Shelf. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
